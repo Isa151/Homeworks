@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tesla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tesla_img {
+    position: relative;
+}
+
+.sec {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 320px;
+    left: 300px;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.one {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 320px;
+    left: 765px;
+    animation: spin 1s infinite linear;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+
+.tesla_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info_up {
+    display: flex;
+    width: 600px;
+    gap: 117px;
+}
+
+.info_up p {
+    font-size: 25px;
+    font-family: 'Roboto';
+    color: grey;
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.info_up h1 {
+    font-size: 50px;
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.info_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.info_bottom p {
+    font-family: 'Roboto';
+    color: #707070;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.info_bottom h1 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Roboto';
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 34px;
+    margin-right: 54px;
+}
+
+.up {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.down {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+
+.btn_toggle {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.btn_toggle p {
+    margin-bottom: 8px;
+}
+
+.modal {
+    display: none   ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal_box {
+    width: 100%;
+    z-index: 0;
+    background-color: blanchedalmond ;
+    height: 100vh;
+}
+
+.modal_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1240px;
+    height: 697px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./img/tesla1.png);
+}
+
+.modal_info {
+    display: flex;
+    width: 600px;
+    gap: 117px;
+    margin: 50px auto;
+}
+
+.modal_info p {
+    font-size: 25px;
+    font-family: 'Roboto';
+    color: grey;
+    color: #707070;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.modal_info h1 {
+    font-size: 50px;
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.colors p {
+    color: #707070;
+font-family: "Roboto";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.item8 p {
+    color: #707070;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.colors{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.round {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+#black{
+     border-radius: 50%;
+     background-color: black;
+}
+
+#white{
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+#milk{
+    border-radius: 50%;
+    background-color: wheat;
+}
