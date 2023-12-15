@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px auto;
+    gap: 10px;
+}
+
+
+.up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    ;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 42px;
+}
+
+.up h1 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+input {
+    width: 321px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #007FFF;
+    color: #000;
+    font-family: Roboto;
+    padding-left: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+
+
+.add {
+    width: 155px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #0071E3;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.todo {
+    width: 282px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid #007FFF;
+    background: #F0F0F0;
+   
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+
+}
+
+
+.title {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.top button{
+  width: 22px;
+height: 22px;
+text-align: center  ;
+border-radius: 50%;
+}
+
+.todo span {
+    color: rgba(0, 0, 0, 0.55);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: Roboto;
+    font-weight: 500;
+    line-height: normal;
+     padding-left: 20px;
+    
+  
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  height: 300px;
+}
+.modal-content h2{
+  margin-bottom: 30px;
+}
+
+.changeTask{
+  margin-top: 30px;
+  padding:5px;
+  font-size: 12px;
+  font-family: Roboto;
+  border:none;
+  background-color: greenyellow;
+  border-radius: 10px;
+   width: 300px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
